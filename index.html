@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>davaleba 13</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>devfinder</h1>
+            <button id="themeToggle" onclick="toggleTheme()">DARK <span>🌙</span></button>
+        </header>
+        <div class="search-section">
+            <div class="search-bar">
+                <input type="text" id="usernameInput" placeholder="  🔍  Search GitHub username...">
+                <button onclick="fetchGitHubUser()">Search</button>
+            </div>
+            <p id="noResults" class="no-results hidden">No results</p>
+        </div>
+        <div class="space-between"></div>
+        <div id="userInfo" class="user-info hidden">
+            <div class="profile">
+                <img id="avatar" src="" alt="User Avatar">
+                <div class="details">
+                    <h2 id="name"></h2>
+                    <a id="usernameLink" href="#" target="_blank"><p id="username"></p></a>
+                    <p id="bio"></p>
+                    <div class="stats">
+                        <div class="stat">
+                            <p>Repos</p>
+                            <p id="repos"></p>
+                        </div>
+                        <div class="stat">
+                            <p>Followers</p>
+                            <p id="followers"></p>
+                        </div>
+                        <div class="stat">
+                            <p>Following</p>
+                            <p id="following"></p>
+                        </div>
+                    </div>
+                    <div class="extra-info">
+                        <p id="location"><img src="assets/location-icon.svg" alt=""></p>
+                        <p id="twitter"><img src="assets/twitter-icon.svg" alt=""> <a href="#" target="_blank" id="twitterLink">Not Available</a></p>
+                        <p id="blog"><img src="assets/link-icon.svg" alt=""><a href="https://github.blog" target="_blank"></a></p>
+                        <p id="company"><img src="assets/company-icon.svg" alt=""></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

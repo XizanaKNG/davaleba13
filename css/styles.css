@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Kumbh+Sans:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    font-family: "Space Mono", monospace;
+}
+
+body {
+    background-color: #f6f8ff;
+    color: #4b6a9b;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #f6f8ff;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #697c9a;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    margin-left: 545px;
+}
+
+.header button span {
+    margin-left: 5px;
+}
+
+.search-section {
+    width: 730px;
+    height: 69px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.search-bar input {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    font-size: 18px;
+    height: 69px;
+    width: 730px;
+}
+
+.search-bar button {
+    margin: 0 0 0 610px;
+    width: 106px;
+    height: 50px;
+    border: none;
+    background-color: #0079ff;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    font-weight: 700;
+}
+
+.search-bar button:hover {
+    background-color: #60ABFF;
+    transition: 0.54s;
+}
+
+.no-results {
+    color: red;
+    position: absolute;
+    margin: -67px 0 0 500px;
+}
+
+.no-results.hidden {
+    display: none;
+}
+
+.space-between {
+    height: 20px;
+}
+
+.user-info {
+    width: 690px;
+    height: 444px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.user-info.hidden {
+    display: none;
+}
+
+.profile {
+    display: flex;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+}
+
+.details {
+    flex: 1;
+}
+
+.details h2 {
+    margin: 0;
+    color: #2b3442;
+}
+
+.details p {
+    margin: 5px 0;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f6f8ff;
+    border-radius: 10px;
+    margin: 10px 0;
+    width: 480px;
+    height: 85px;
+}
+
+#bio {
+    margin-top: 10px;
+}
+
+#location img {
+    width: 13.75px;
+    height: 20px;
+}
+
+#twitter img {
+    width: 20px;
+    height: 16.25px;
+}
+
+#blog img {
+    width: 20px;
+    height: 20px;
+}
+
+#company img {
+    width: 20px;
+    height: 20px;
+    border-radius: 0%;
+}
+
+.stat p {
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.stat p:nth-child(2) {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    text-align: start;
+    color: black;
+}
+
+.extra-info p {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.extra-info img {
+    margin-right: 5px;
+}
+
+#location {
+    position: absolute;
+    margin: 125px 0 0 0;
+}
+
+#twitter {
+    position: absolute;
+    margin: 130px 0 0 280px;
+}
+
+#blog {
+    position: absolute;
+    margin: 175px 0 0 0;
+}
+
+#company {
+    position: absolute;
+    margin: 177px 0 0 280px;
+}
+
+a {
+    color: #0079ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body.dark {
+    background-color: #141d2f;
+    color: #ffffff;
+}
+
+body.dark .container {
+    background-color: #141d2f;
+}
+
+body.dark .header button {
+    color: #ffffff;
+}
+
+body.dark .search-section {
+    background-color: #1e2a47;
+}
+
+body.dark .search-bar input {
+    background-color: #1e2a47;
+    color: #ffffff;
+    border: 1px solid #1e2a47;
+    height: 69px;
+    width: 730px;
+}
+
+body.dark .search-bar button {
+    background-color: #0079ff;
+}
+
+body.dark .search-bar button:hover {
+    background-color: #60ABFF;
+    transition: 0.54s;
+}
+
+body.dark .stats {
+    background-color: #141d2f;
+}
+
+body.dark .extra-info img {
+    filter: invert(1);
+}
+
+body.dark .user-info {
+    background-color: #1e2a47;
+}
+
+body.dark .stat p:nth-child(2) {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    text-align: start;
+    color: white;
+}
+
+body.dark .details h2 {
+    margin: 0;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .search-bar input {
+        height: 50px;
+    }
+    .search-section {
+        height: 50px;
+        width: 600px;
+        margin: 60px 0 0 0;
+    }
+    .header button {
+        margin-left: 540px;
+        position: absolute;
+    }
+    .search-section button {
+        position: absolute;
+        margin-left: 480px;
+    }
+    .no-results {
+        margin: -60px 0 0 360px;
+    }
+    .space-between {
+        height: 50px;
+    }
+    .user-info {
+        width: 560px;
+    }
+    #bio {
+        margin: 70px 0 0 -120px;
+    }
+    .stats{
+        margin: 40px 0 0 -100px;
+    }
+    .extra-info {
+        margin: -90px 0 0 -90px;
+    }
+    body.dark .search-bar input {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 376) {
+    .search-bar input {
+        height: 20px;
+    }
+    .search-section {
+        height: 50px;
+        width: 300px;
+        margin: 60px 0 0 0;
+    }
+    .header button {
+        margin-left: 140px;
+        position: absolute;
+    }
+    .search-section button {
+        position: absolute;
+        margin-left: 200px;
+    }
+    .no-results {
+        margin: -70px 0 0 200px;
+    }
+    .space-between {
+        height: 50px;
+    }
+    .user-info {
+        width: 560px;
+    }
+    #bio {
+        margin: 70px 0 0 -120px;
+    }
+    .stats{
+        margin: 40px 0 0 -100px;
+    }
+    .extra-info {
+        margin: -90px 0 0 -90px;
+    }
+    body.dark .search-bar input {
+        height: 50px;
+    }
+}
